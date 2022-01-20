@@ -1,0 +1,32 @@
+/* TOP DA PÁGINA NAV */
+nav{
+    text-align: center;
+    padding: 10px 0px;
+    border-top: 20px solid rgb(26, 25, 25);
+    background-color: rgba(14, 13, 13, 0.837);
+    border-bottom: 4px solid orange;
+    text-decoration: none;
+    color: white; 
+}
+/* TOP DA PÁGINA NAV  - LINKS A */
+nav ul li a { color: white; }
+nav ul li a { color: rgb(201, 194, 194); }
+
+/* TOP DA PÁGINA - TÍTULO */
+.h2{ 
+    padding: 15px; border-radius: 30px;
+    background-color: rgb(87, 5, 92);
+    color: white; text-align: center;}
+
+/* FOOTER DA PÁGINA - RODAPÉ */
+.footer p { 
+    margin: 5px;}
+.footer a:link, a:visited {
+    color: white;
+    transition: 1s; display: inline-block;
+    text-decoration: none;}
+.footer i { margin-right: 4px;}
+.footer{ text-align: center; padding: 20px 0px;
+    border-top: 10px solid orange;
+    background-color: rgba(22, 22, 22, 0.837);
+    color: white;}

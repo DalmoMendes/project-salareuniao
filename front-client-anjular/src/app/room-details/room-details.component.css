@@ -1,0 +1,10 @@
+button{
+    margin: 10px 0px;
+    transition: 1s;
+}
+button:hover{
+    background-color: rgb(8, 91, 194);
+    border-color: rgb(8, 91, 194);
+    color: white;
+    font-weight: bold;
+}

@@ -1,0 +1,33 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2><i class="bi bi-trophy-fill"></i> Eventos Atuais</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped" style="text-align: center;">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Data</th>
+            <th><span title="Hora de Início">Início</span></th>
+            <th><span title="Hora de Término">Término</span></th>
+            <th><span title="Ações Administrativas!">Ações Adiministrativas</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let room of rooms | async">
+            <td style="text-align: left;">{{room.name}}</td>
+            <td>{{room.date}}</td>
+            <td>{{room.startHour}}</td>
+            <td>{{room.endHour}}</td>
+            <td>
+              <button (click)="roomDetails(room.id)" class="btn btn-info" title="Abrir Sala!"><i class="bi bi-folder2-open"></i></button>
+              <button (click)="updateRoom(room.id)" class="btn btn-success" style="margin: 0px 10px" title="Atualizar Sala!"><i class="bi bi-arrow-repeat"></i></button>
+              <button (click)="deleteRoom(room.id)" class="btn btn-danger" title="Apagar Sala!"><i class="bi bi-trash"></i></button>
+                
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
